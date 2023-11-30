@@ -1,0 +1,12 @@
+{
+  "name": "tercera-pre-entrega-dons-b",
+  "version": "1.0.0",
+  "description": "Esta es mi tercer pre-entrega.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/modules/editor_entrega.scss css/editor_entrega.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
