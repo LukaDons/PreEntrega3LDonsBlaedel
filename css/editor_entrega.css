@@ -22,6 +22,10 @@
   padding: 50px;
 }
 
+.contact-inicio {
+  gap: 1px;
+}
+
 .btn--aceptar {
   background-color: green;
 }
@@ -83,7 +87,16 @@ main aside p {
   background-position: left;
   padding: 10rem;
 }
-#indexMain #indexMainUno #indexImg {
+#indexMain #indexMainUno .contenedor_img_p:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+  transition: 0.5s ease-in;
+  transition: 0.5s ease-out;
+  border-radius: 2px;
+}
+#indexMain #indexMainUno .contenedor_img_p:hover .contenedor_img_p {
+  overflow: hidden;
+  transform-origin: center;
   height: 20rem;
 }
 #indexMain #indexMainDos {
@@ -102,13 +115,34 @@ main aside p {
   grid-area: skillsMainUno;
   padding: 1.5rem;
 }
-#skillsMain #skillsMainUno #programador {
+#skillsMain #skillsMainUno #programador:hover {
   padding: 50px;
-  margin: 10px;
+  margin: 11px;
   width: 18rem;
   background-color: #636363;
   border-radius: 1rem;
   height: fit-content;
+  animation: vibrate 1.5s linear both;
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
@@ -118,13 +152,13 @@ main aside p {
   background-color: black;
   cursor: pointer;
   border: none;
-  padding: 8px 12px;
+  padding: 1rem;
   color: antiquewhite;
   font-size: 22px;
   font-weight: bold;
   position: relative;
   border-radius: 1rem;
-  margin-top: 8px;
+  margin-top: 1rem;
 }
 #skillsMain #skillsMainDos #unic ::before {
   content: "";
@@ -198,6 +232,7 @@ main aside p {
 #serviciosMain .contact-iconos {
   width: 4.9rem;
   height: 5rem;
+  padding-right: 0.5rem;
 }
 #serviciosMain .serviciosTexto {
   background-color: rgba(68, 66, 66, 0.925);
@@ -241,6 +276,9 @@ main aside p {
   width: 8rem;
   border-radius: 1rem;
   padding: 0.5rem;
+}
+#serviciosMain #serviciosMainCinco .imgClientes:hover {
+  filter: opacity(0.5);
 }
 
 #porfolioMain {
@@ -297,6 +335,14 @@ main aside p {
 }
 #porfolioMain #porfolioMainDos {
   grid-area: porfolioMainDos;
+  background-color: #636363;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 1rem;
+  justify-self: center;
+  font-size: 1.9rem;
+  height: fit-content;
+  width: fit-content;
 }
 
 #ContactMain {
@@ -715,6 +761,7 @@ header {
   grid-area: indexHeaderUno;
   display: flex;
   align-items: center;
+  margin-left: 0.5rem;
 }
 #indexHeader #indexHeaderDos {
   grid-area: indexHeaderDos;
