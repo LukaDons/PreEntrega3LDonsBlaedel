@@ -115,13 +115,15 @@ main aside p {
   grid-area: skillsMainUno;
   padding: 1.5rem;
 }
-#skillsMain #skillsMainUno #programador:hover {
+#skillsMain #skillsMainUno #programador {
   padding: 50px;
   margin: 11px;
   width: 18rem;
   background-color: #636363;
   border-radius: 1rem;
   height: fit-content;
+}
+#skillsMain #skillsMainUno #programador:hover {
   animation: vibrate 1.5s linear both;
 }
 @keyframes vibrate {
@@ -2138,24 +2140,23 @@ header {
     font-size: 0.7rem;
   }
 }
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) and (min-width: 426px) and (max-width: 768px) {
   #skillsMain {
     grid-area: skillsMain;
     padding-top: 60px;
     display: grid;
     grid-template-columns: 2.3fr 1.2fr;
-    grid-template-rows: 3fr 0.2fr;
-    grid-template-areas: "skillsMainDos skillsMainTres" "skillsMainDos skillsMainTres";
+    grid-template-rows: 2fr 1.5fr;
+    grid-template-areas: "skillsMainDos skillsMainTres" "skillsMainDos skillsMainUno";
   }
   #skillsMain #skillsMainUno {
     grid-area: skillsMainUno;
     padding: 5px;
-    visibility: hidden;
   }
   #skillsMain #skillsMainUno #programador {
-    padding: 10px;
-    margin: 4px;
-    width: 6rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
     background-color: #636363;
     border-radius: 1rem;
     height: fit-content;
@@ -2219,14 +2220,16 @@ header {
     border-radius: 1rem;
     height: fit-content;
     width: fit-content;
-    margin-left: 0.5rem;
-    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
     text-align: center;
   }
   #skillsMain #skillsMainTres .imgSkills {
     width: 5rem;
     height: 5rem;
   }
+}
+@media (min-width: 426px) and (max-width: 768px) {
   #serviciosMain {
     grid-area: serviciosMain;
     justify-content: center;
@@ -2263,7 +2266,7 @@ header {
     grid-area: serviciosMainDos;
     padding: 2rem;
     margin: 3rem;
-    padding-top: 10rem;
+    padding-top: 12rem;
   }
   #serviciosMain #serviciosMainTres {
     grid-area: serviciosMainTres;
@@ -2295,9 +2298,9 @@ header {
   #ContactMain {
     grid-area: contactMain;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "contactMainUno contactMainDos" "contactMainTres contactMainTres";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr;
+    grid-template-areas: "contactMainUno" "contactMainDos" "contactMainTres";
   }
   #ContactMain #contactMainUno {
     grid-area: contactMainUno;
@@ -2310,6 +2313,9 @@ header {
     border-radius: 1rem;
     width: fit-content;
   }
+  #ContactMain #contactMainUno .container {
+    max-width: 250px;
+  }
   #ContactMain #contactMainUno #contactBorde {
     border: 0.5rem solid black;
     width: fit-content;
@@ -2319,16 +2325,19 @@ header {
     grid-area: contactMainDos;
     justify-self: center;
     align-self: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #636363;
     height: fit-content;
     border-radius: 1rem;
     width: fit-content;
     margin: 1rem;
-    margin-left: 1.4rem;
   }
   #ContactMain #contactMainDos .contactInfo {
     margin: 0;
+  }
+  #ContactMain #contactMainDos .contactInfo .contact-iconos {
+    margin: 0.8rem;
+    height: 3rem;
   }
   #ContactMain #contactMainTres {
     grid-area: contactMainTres;
@@ -2341,7 +2350,11 @@ header {
     border-radius: 1rem;
     width: fit-content;
     margin: 1rem;
-    padding-left: 3rem;
+    text-align: center;
+  }
+  #ContactMain #contactMainTres #ubicacion {
+    width: 16rem;
+    height: 24rem;
   }
   #errorMain {
     width: 100vw;
