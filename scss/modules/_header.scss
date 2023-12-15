@@ -64,6 +64,7 @@ header {
         grid-area: skillsHeaderUno;
         display: flex;
         align-items: center;
+        padding: 1rem;
     
     }
 
@@ -105,6 +106,7 @@ header {
         grid-area: serviciosHeaderUno;
         display: flex;
         align-items: center;
+        padding: 1rem;
     }
 
     #serviciosHeaderDos {
@@ -145,6 +147,7 @@ header {
         grid-area: porfolioHeaderUno;
         display: flex;
         align-items: center;
+        padding: 1rem;
       }
 
       #porfolioHeaderDos {
@@ -184,6 +187,7 @@ header {
         grid-area: contactHeaderUno;
         display: flex;
         align-items: center;
+        padding: 1rem;
       }
 
       #contactHeaderDos {
@@ -223,7 +227,7 @@ header {
         grid-area: errorHeaderUno;
         display: flex;
         align-items: center;
-        font-size: 1.1rem;
+        padding: 1rem;
       }
 
       #errorHeaderDos {

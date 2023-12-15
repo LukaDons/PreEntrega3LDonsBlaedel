@@ -2128,6 +2128,7 @@ footer {
         width: fit-content;
         margin: 1rem;
         margin-left: 1.4rem;
+        font-size: 1.2rem;
 
         .contactInfo {
             margin: 0;
@@ -2166,7 +2167,7 @@ footer {
         padding-top: 60px;
         display: grid;
         grid-template-columns: 1.5fr 1.5fr;
-        grid-template-rows: 1fr 1fr 0.2fr;
+        grid-template-rows: 0.8fr 1fr 0.2fr;
         grid-template-areas:
         "skillsMainUno skillsMainDos "
         "skillsMainTres skillsMainDos "
@@ -2176,6 +2177,7 @@ footer {
             grid-area: skillsMainUno;
             padding: 1.5rem;
             justify-self: center;
+            align-self: center;
     
             #programador {
                 padding: 50px;
@@ -2266,6 +2268,7 @@ footer {
                 text-align: center;
                 justify-self: center;
                 padding: 3rem;
+                margin-bottom: 3rem;
   
     
             .imgSkills {
@@ -2552,7 +2555,7 @@ footer {
     grid-area: contactMain;
     display: grid;
     grid-template-columns:1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
   grid-template-areas: 
   "contactMainUno contactMainDos" 
   "contactMainTres contactMainTres";
