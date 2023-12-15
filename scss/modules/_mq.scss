@@ -1545,7 +1545,7 @@ footer {
               #programador {
                   padding: 1rem;
                   margin: 1rem;
-                  width: 10rem;
+                  width: 10.5rem;
                   background-color: #636363;
                   border-radius: 1rem;
                   height: fit-content;
@@ -2005,11 +2005,96 @@ footer {
 
   }
 
+  #serviciosMain {
+    grid-area: serviciosMain;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "serviciosMainUno serviciosMainDos"
+    "serviciosMainTres serviciosMainCuatro "
+    "serviciosMainCinco serviciosMainCinco";
+
+    .serviciosIconos {
+        display: flex;
+        background-color: rgba(128, 128, 128, 0.925);
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        padding: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .contact-iconos {
+        width: 4.9rem;
+        height: 5rem;
+        
+    }
+
+    .serviciosTexto {
+        background-color: $c-secundario;
+        border-radius: 1rem;
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    #serviciosMainUno {
+        grid-area: serviciosMainUno;
+        padding: 2rem;
+        margin: 3rem;
+    }
+    
+    #serviciosMainDos {
+        grid-area: serviciosMainDos;
+        padding: 2rem;
+        margin: 3rem;
+        padding-top: 12rem;
+        
+    }
+
+    #serviciosMainTres {
+        grid-area: serviciosMainTres;
+        padding: 2rem;
+        margin: 3rem;
+
+    }
+
+    #serviciosMainCuatro {
+        grid-area: serviciosMainCuatro;
+        padding: 2rem;
+        margin: 3rem;
+    }
+
+    #serviciosMainCinco {
+        grid-area: serviciosMainCinco;
+        padding: 2rem;
+        margin: 3rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 1rem;
+       text-align: center;
+       margin-top: 3rem;
+       margin-bottom: 2rem;
+       justify-self: center;
+        
+        
+       
+
+       .imgClientes {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
+       }
+    }
+      
+}
+
   #ContactMain {
     grid-area: contactMain;
     display: grid;
     grid-template-columns:1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
   grid-template-areas: 
   "contactMainUno contactMainDos" 
   "contactMainTres contactMainTres";
@@ -2282,7 +2367,7 @@ footer {
     grid-area: contactMain;
     display: grid;
     grid-template-columns:1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
   grid-template-areas: 
   "contactMainUno contactMainDos" 
   "contactMainTres contactMainTres";
